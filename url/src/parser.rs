@@ -187,7 +187,7 @@ pub fn default_port(scheme: &str) -> Option<u16> {
         "http" | "ws" => Some(80),
         "https" | "wss" => Some(443),
         "ftp" => Some(21),
-        "trusted" | "tile" => Some(0),
+        "trusted" | "tile" | "beaver" => Some(0),
         _ => None,
     }
 }
